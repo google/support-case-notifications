@@ -1,0 +1,28 @@
+{
+  "displayName": "Support Case Opened Notification",
+  "documentation": {
+    "content": "Log-based alert in project ${project} detected a new support case being opened.",
+    "mimeType": "text/markdown"
+  },
+
+  "conditions": [
+    {
+      "displayName": "New Support case created",
+      "conditionMatchedLog": {
+        "filter": textPayload="A new support case has been created.",
+      },
+    }
+  ],
+  "combiner": "OR",
+
+  "alertStrategy": {
+    "notificationRateLimit": {
+      "period": "300s"
+    },
+    "autoClose": "604800s",
+  },
+
+  "notificationChannels": [
+    "projects/example-project-id/notificationChannels/example-id"
+  ]
+}

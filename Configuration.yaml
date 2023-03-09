@@ -1,0 +1,29 @@
+#Copyright 2023 Google LLC
+#
+#Licensed under the Apache License, Version 2.0 (the "License");
+#you may not use this file except in compliance with the License.
+#You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#Unless required by applicable law or agreed to in writing, software
+#distributed under the License is distributed on an "AS IS" BASIS,
+#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#See the License for the specific language governing permissions and
+#limitations under the License.
+
+#Instructions: 
+#1. Replace the project ID that you would like the notifications to originate from
+#2. Replace the organization ID that this project falls under
+#
+#3. If you would like to get notified about new cases only from the project level, 
+#replace the onlyProject value with True
+#
+#4. If you would like to get notified about new cases from the organization level,
+#including all projects that fall within this organization, keep the onlyProject value with False 
+
+project: "example-project-id"
+
+organization: "example-org-id"
+
+onlyProject: "False"

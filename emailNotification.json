@@ -1,0 +1,8 @@
+{
+      "type": "email",
+      "displayName": "Alert Support Ticket Notifications",
+      "description": "Email channel for alert support ticket notifications",
+      "labels": {
+        "email_address": "example@example.com"
+      }
+    }

@@ -1,0 +1,5 @@
+pyYaml
+google-apis-client-generator
+numpy
+google-cloud-storage
+google-cloud-logging
