@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 # GCP Cloud Run Module for Support Case Creation Notifications
-Containerized notification system for whenever a new support case is opened. The Cloud Scheduler will run every 10 minutes by default, triggering the Cloud Run job. The Cloud Run job will check if there are any new support cases and trigger the alerting policy, which will send a notification to the user. 
+Containerized notification system for whenever a new support case is opened within your project or organization. The Cloud Scheduler will run every 10 minutes by default, triggering the Cloud Run job. The Cloud Run job will check if there are any new support cases and trigger the alerting policy, which will send a notification to the user. 
 
 ![Architecture](Architecture.png)
 
@@ -23,6 +23,7 @@ Containerized notification system for whenever a new support case is opened. The
 1. This is not an officially supported Google product.
 2. Proper testing should be done before running this tool in production.
 3. Standard, Enhanced, or Premium support must be enabled for case creation and Support API usage
+4. This solution assumes that the user has been assigned the appropriate IAM roles
 
 ## Licensing
 This sample code is made available under Apache 2 license. See the [LICENSE](./LICENSE) file for more details.
